@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kotlin10">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin10">
         <activity
-            android:name=".Screen.shared_screen.view.ExActivity"
+            android:name=".Screen.api_screen.view.Api_Screem"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +20,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Screen.database_screen.view.Database_Screen"
+            android:name=".Screen.shared_screen.view.ExActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Screen.database_screen.view.Database_Screen"
             android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
